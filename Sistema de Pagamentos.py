@@ -27,7 +27,7 @@ FORMAS DE PAGAMENTO
         print(f"O valor final da sua compra é R${total:.2f}")
     elif opção == 4:
         total = preco + (preco *20 / 100)
-        tot_parcelas = int(input("Em quantas vezes você quer dividir?" ))
+        tot_parcelas = int(input("Em quantas vezes você quer dividir? "))
         parcela = total / tot_parcelas
         print(f"Sua compra será parcelada em {tot_parcelas} vezes de R${parcela:.2f}")
         print(f"O valor final da sua compra é R${total:.2f}")
@@ -36,7 +36,7 @@ FORMAS DE PAGAMENTO
 
     def again():
         pag_again = input("""
-    Deseja tentar novamente? 'S' para SIM ou 'N' para NÂO 
+    Deseja tentar novamente? 'S' para SIM ou 'N' para NÂO
     """)
         if pag_again.upper() == "S":
             pagamento()
